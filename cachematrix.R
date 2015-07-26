@@ -44,9 +44,9 @@ makeCacheMatrix <- function(m = matrix()) {
 }
 
 
-## function cacheSolve creates checks the presense of cached inverse matrix
-## is the cache exists it returns the cached matrix
-## otherwise it calculates the inverse and stores it in cache
+## function cacheSolve checks the presense of cached inverse matrix.
+## if the cache exists it returns the cached matrix.
+## otherwise it calculates the inverse and stores it in cache before returning it
 
 cacheSolve <- function(x, ...) {
     ##checks whether the matrix is invertible
