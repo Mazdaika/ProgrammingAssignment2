@@ -10,7 +10,7 @@ makeCacheMatrix <- function(m = matrix()) {
     ## this part checks that the input is a square matrix, otherwise the 
     ## inverse matrix cannot be defined
     if(class(m) != "matrix") {
-        stop("object x must be a square matrix")
+        stop("object m must be a square matrix")
     } else {
         if(nrow(m)!=ncol(m)){
             stop("matrix must be square")
